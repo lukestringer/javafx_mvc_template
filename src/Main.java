@@ -1,4 +1,7 @@
 
+import GUI.Controller;
+import GUI.Model;
+import GUI.View;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -14,7 +17,7 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         Model model = new Model();
         View view = new View(model);
-        new Contoller(view, model);
+        new Controller(view, model);
 
         int width = 600;
         int height = 400;
